@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Admin Joe's Login</title>
+  <script src="../../Flags/flags.js" charset="utf-8"></script>
+</head>
+
+<body>
+  <form name="login">
+    <h1>Admin Joe's Secure Login</h1>
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="usrname" required>
+    <br>
+    <br>
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="passwd" required>
+    <br>
+    <br>
+    <button type="button" onclick="Login()">Login</button>
+
+  </form>
+</body>
+<script type="text/javascript">
+  function Login() {
+    let usr = document.login.usrname.value;
+    let pass = document.login.passwd.value;
+    let username = "Admin_Joe"
+    let password = "A_verysafe-passw0rd"
+    if ((usr == username) && (pass == password)) {
+      console.log(basic1)
+      return true;
+    } else {
+      alert("Username and password was incorrect!");
+    }
+  }
+</script>
+
+</html>
